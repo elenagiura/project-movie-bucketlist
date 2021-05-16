@@ -17,3 +17,10 @@ To run this project, you just need to copy url of repository and do next command
 $ cd <location>
 $ git clone <url>
 ```
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You need to opet project directory first and then type:
+```
+$ cd <project>
+$ npm install
+$ npm start
+```
