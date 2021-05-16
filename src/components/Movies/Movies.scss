@@ -1,0 +1,45 @@
+section.movies {
+	width:90%;
+	margin: 20px auto;
+	margin-bottom:20px;
+	padding-bottom:10px;
+	border-radius:10px;
+	background: rgba(225,225,225,0.7);
+	position: relative;
+	top: 100px;
+
+	div.filters {
+		padding-top:20px;
+
+		span{
+			margin: 0 5px;
+			padding: 5px 10px;
+			background-color:#929292;
+			font-size: 12px;
+			border-radius: 10px;
+		}
+
+		img, div {
+			float:right;
+			height: 25px;
+		}
+	}
+
+	h2 {
+		padding: 10px 0;
+		border-bottom: solid 2.5px #000;
+	}
+
+	ul li {
+		background:rgba(225,225,225,0.8);
+		margin:10px 0;
+		padding:10px;
+		border-radius:10px;
+	}
+}
+
+@media all and (max-width:700px) {
+	section.movies {
+		top: 160px;
+	}
+}

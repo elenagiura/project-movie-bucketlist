@@ -1,0 +1,128 @@
+header.info {
+	a{
+		line-height: 60px;
+		float:left;
+	}
+
+	span.back{
+		display: inline-block;
+		width:30px;
+		height: 30px;
+		line-height: 30px;
+		text-align:center;
+		margin-right:20px;
+		background: #000;
+		color: #ea6874;
+		border: solid 1px #ea6874;
+		border-radius:50%;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+
+	h1 {
+		float:left;
+		line-height: 60px;
+		font-size:30px;
+
+		span{
+			color:#ea6874;
+		}
+	}
+}
+
+article.wrapper {
+	width:90%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius:10px;
+	background: rgba(225,225,225,0.7);
+	position: relative;
+	top: 100px;
+
+	>div {
+		float:left;
+
+		&:first-child {
+			width:40%;
+			margin-right: 15px;
+
+			img{
+				width:100%;
+			}
+		}
+
+		&:last-child {
+			width:55%;
+
+			h1{
+				width:100%;
+				color:#000;
+				line-height: 60px;
+				margin-left:10px;
+			}
+
+			span.rating {
+				display:inline-block;
+				width: 40px;
+				height: 40px;
+				line-height: 30px;
+				text-align: center;
+				border-radius: 50%;
+				border:solid 2px #000;
+				font-size:20px;
+				background-color: #ea6874;
+			}
+
+			div {
+				padding: 15px 0;
+
+				p {
+					line-height: 2em;
+
+					span {
+						font-size:18px;
+
+						&:hover {
+							font-weight: bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width:800px) {
+	article.wrapper>div:last-child div p {
+		line-height: 1.7em;
+		font-size:14px;
+	}
+}
+
+@media all and (max-width:650px) {
+	header.info h1 {
+		font-size:25px;
+	}
+
+	article.wrapper>div {
+		float:none;
+
+		&:first-child {
+			width:100%;
+			overflow: hidden;
+			margin-right: 15px;
+
+			img{
+				width:300px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		&:last-child {
+			width:100%;
+		}
+	}
+}

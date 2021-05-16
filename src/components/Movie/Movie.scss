@@ -1,0 +1,86 @@
+li.movie {
+	position: relative;
+
+	span {
+		float:left;
+		display:inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 30px;
+		text-align: center;
+		border-radius: 50%;
+		border:solid 2px #000;
+		font-size:20px;
+		background-color: #ea6874;
+	}
+
+	h3 {
+		float:left;
+		width:90%;
+		color:#000;
+		line-height: 40px;
+		margin-left:10px;
+		transition: font-size 1s linear;
+
+		&:hover {
+			font-size:1.4em;
+		}
+	}
+
+	ul{
+		padding: 50px 0 10px;
+
+		li{
+			float:left;
+			margin: 3px 5px;
+			padding: 5px 10px;
+			background-color:#929292;
+			font-size: 12px;
+
+			&.watched:hover {
+				background-color: #929292;
+				color:#000;
+			}
+
+			&:hover {
+				background-color: #5b5a5a;
+				color:#fff;
+			}
+		}
+	}
+
+	div.buttons {
+		position:absolute;
+		bottom:15px;
+		right: 15px;
+
+		img{
+			margin:0 10px;
+
+			&:nth-child(2) {
+				height: 27px;
+			}
+		}
+
+		span{
+			float:right;
+			margin:0 10px;
+			background-color: #fff;
+			width: 29px;
+			height: 29px;
+			line-height: 20px;
+
+			&:nth-child(3){
+				line-height: 23px;
+			}
+		}
+	}
+}
+
+@media all and (max-width:700px) {
+	li.movie div.buttons {
+		position:relative;
+		bottom:0px;
+		right: 0px;
+	}
+}
