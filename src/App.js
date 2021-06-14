@@ -90,13 +90,13 @@ const App = () => {
   return (
     <React.Fragment>
       <Switch>
+        <Route exact path='/:id'>
+          <MovieInfo movie={movieInfo}/>
+        </Route>
         <Route exact path='/'>
           <Search toWatch={toWatch} movieList={movieList}/>
           <Movies watched={false} movieList={moviesForWatch} hide={hide} remove={remove} move={move} filterMovies={filterMovies} filters={filters} reset={()=>getResults()} info={info}/>
           <Movies watched={true} movieList={watchedMovies} hide={hide} remove={remove} move={move} filterMovies={filterMovies} filters={filters} reset={()=>getResults()} info={info}/>
-        </Route>
-        <Route exact path='/:id'>
-          <MovieInfo movie={movieInfo}/>
         </Route>
       </Switch>
     </React.Fragment>
