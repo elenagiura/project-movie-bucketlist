@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/project-movie-bucketlist/static/css/main.62005c87.chunk.css",
+    "main.js": "/project-movie-bucketlist/static/js/main.0a0640d6.chunk.js",
+    "main.js.map": "/project-movie-bucketlist/static/js/main.0a0640d6.chunk.js.map",
+    "runtime-main.js": "/project-movie-bucketlist/static/js/runtime-main.45195a8d.js",
+    "runtime-main.js.map": "/project-movie-bucketlist/static/js/runtime-main.45195a8d.js.map",
+    "static/js/2.c290b64b.chunk.js": "/project-movie-bucketlist/static/js/2.c290b64b.chunk.js",
+    "static/js/2.c290b64b.chunk.js.map": "/project-movie-bucketlist/static/js/2.c290b64b.chunk.js.map",
+    "index.html": "/project-movie-bucketlist/index.html",
+    "static/css/main.62005c87.chunk.css.map": "/project-movie-bucketlist/static/css/main.62005c87.chunk.css.map",
+    "static/js/2.c290b64b.chunk.js.LICENSE.txt": "/project-movie-bucketlist/static/js/2.c290b64b.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/project-movie-bucketlist/static/media/background.65e685eb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.45195a8d.js",
+    "static/js/2.c290b64b.chunk.js",
+    "static/css/main.62005c87.chunk.css",
+    "static/js/main.0a0640d6.chunk.js"
+  ]
+}
