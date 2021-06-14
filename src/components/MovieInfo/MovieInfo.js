@@ -8,7 +8,7 @@ export const MovieInfo = (props) => {
 		<React.Fragment>
 			<header className='info'>
 				<div className='wrapper  clearfix'>
-					<Link to='/project-movie-bucketlist' className='clearfix'> <span className='back'>&lt;</span> </Link>
+					<Link to='/project-movie-bucketlist/' className='clearfix'> <span className='back'>&lt;</span> </Link>
 					<h1><span>{!props.movie.watched ? 'To Watch ' : 'Watched '}</span>/ {props.movie.Title}</h1>
 				</div>
 			</header>

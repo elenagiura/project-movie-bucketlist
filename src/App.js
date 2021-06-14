@@ -86,12 +86,11 @@ const App = () => {
   const info = (movie) => setMovieInfo({...movie});
  
   React.useEffect(getResults,[]);
-  React.useEffect(()=>window.history.back(),[]);
 
   return (
     <React.Fragment>
       <Switch>
-        <Route exact path='/project-movie-bucketlist'>
+        <Route exact path='/project-movie-bucketlist/'>
           <Search toWatch={toWatch} movieList={movieList}/>
           <Movies watched={false} movieList={moviesForWatch} hide={hide} remove={remove} move={move} filterMovies={filterMovies} filters={filters} reset={()=>getResults()} info={info}/>
           <Movies watched={true} movieList={watchedMovies} hide={hide} remove={remove} move={move} filterMovies={filterMovies} filters={filters} reset={()=>getResults()} info={info}/>
