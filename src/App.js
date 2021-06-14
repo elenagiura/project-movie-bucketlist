@@ -12,7 +12,7 @@ const App = () => {
   const [moviesForWatch, setMoviesForWatch] = React.useState([]);
   const [watchedMovies, setWatchedMovies] = React.useState([]);
   const [filters, setFilters] = React.useState([]);
-  const [movieInfo, setMovieInfo] = React.useState({});
+  const [movieInfo, setMovieInfo] = React.useState(null);
 
   const toWatch = (movie) => {
     fetch(`${apiUrl}i=${movie.imdbID}`)
@@ -91,7 +91,7 @@ const App = () => {
     <React.Fragment>
       <Switch>
         <Route exact path='/:id'>
-          <MovieInfo movie={movieInfo}/>
+          {movieInfo!==null && <MovieInfo movie={movieInfo}/>}
         </Route>
         <Route exact path='/'>
           <Search toWatch={toWatch} movieList={movieList}/>
