@@ -81,16 +81,21 @@ header.main {
 	header.main {
 		h1 {
 			width:100%;
+			font-size:28px;
 			text-align: center;
 		}
 
 		div.search {
 			float:none;
-			width:300px;
+			width:250px;
 			margin:0 auto;
 
 			ul {
 				top:110px;
+			}
+
+			input {
+				width:250px;
 			}
 		}
 	}

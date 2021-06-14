@@ -10,9 +10,11 @@ section.movies {
 
 	div.filters {
 		padding-top:20px;
+		display:flex;
+		justify-content: flex-end;
 
 		span{
-			margin: 0 5px;
+			margin: 5px;
 			padding: 5px 10px;
 			background-color:#929292;
 			font-size: 12px;
@@ -20,8 +22,15 @@ section.movies {
 		}
 
 		img, div {
-			float:right;
 			height: 25px;
+		}
+
+		div {
+			display:flex;
+			justify-content: flex-end;
+			width:100%;
+			flex-wrap:wrap;
+			height:auto;
 		}
 	}
 

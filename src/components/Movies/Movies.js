@@ -12,8 +12,8 @@ export const Movies = (props) => {
 
 	const showFilters = () => (
 		<div className='filters clearfix'>
-			<img src={filter} alt='reset' onClick={props.reset}/>
 			<div>{props.filters.map(genre=><span key={uuid()}>{genre}</span>)}</div>
+			<img src={filter} alt='reset' onClick={props.reset}/>
 		</div>
 	)
 

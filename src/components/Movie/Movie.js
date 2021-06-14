@@ -10,9 +10,11 @@ export const Movie = (props) => {
 
 	return (
 		<li className='movie clearfix'>
+			<img className='poster' src={props.movie.Poster} alt={props.movie.Title}/>
 			<span>{props.movie.imdbRating}</span>
 			<Link to={`/${props.movie.id}`} onClick={()=>props.info(props.movie)}><h3>{props.movie.Title}</h3></Link>
 			<ul className='clearfix'>{genres.map(genre => <li key={uuid()} className={`${props.movie.watched ? 'watched' : ''}`} onClick={()=>!props.movie.watched ? props.filterMovies(genre) : null}>{genre}</li>)}</ul>
+
 			<div className='buttons'>
 				{!props.movie.watched && <img src={hide} alt='watched' onClick={()=>props.hide(props.movie.id)}/>}
 				<img src={trash} alt='remove' onClick={()=>props.remove(props.movie.id)}/>

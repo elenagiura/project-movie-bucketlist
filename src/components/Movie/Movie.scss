@@ -3,6 +3,7 @@ li.movie {
 
 	span {
 		float:left;
+		margin-left: 10px;
 		display:inline-block;
 		width: 40px;
 		height: 40px;
@@ -14,9 +15,14 @@ li.movie {
 		background-color: #ea6874;
 	}
 
+	img.poster {
+		float:left;
+		height: 200px;
+	}
+
 	h3 {
 		float:left;
-		width:90%;
+		width:65%;
 		color:#000;
 		line-height: 40px;
 		margin-left:10px;
@@ -28,7 +34,9 @@ li.movie {
 	}
 
 	ul{
-		padding: 50px 0 10px;
+		float:left;
+		width:70%;
+		padding: 10px 5px 10px;
 
 		li{
 			float:left;
@@ -50,6 +58,8 @@ li.movie {
 	}
 
 	div.buttons {
+		display:flex;
+		justify-content:flex-end;
 		position:absolute;
 		bottom:15px;
 		right: 15px;
@@ -63,10 +73,10 @@ li.movie {
 		}
 
 		span{
-			float:right;
 			margin:0 10px;
 			background-color: #fff;
-			width: 29px;
+			min-width: 29px;
+			max-width: 29px;
 			height: 29px;
 			line-height: 20px;
 
@@ -78,9 +88,71 @@ li.movie {
 }
 
 @media all and (max-width:700px) {
+	
+	li.movie {
+		h3 {
+			font-size: 16px;
+			line-height:40px;
+			width:50%;
+		}
+
+		ul  {
+			width:55%;
+		}
+	}
+
 	li.movie div.buttons {
 		position:relative;
-		bottom:0px;
+		top:170px;
 		right: 0px;
+	}
+}
+
+@media all and (max-width:550px) {
+	li.movie {
+		span {
+			margin-bottom: 10px;
+		}
+
+		img.poster {
+			float:none;
+			display: block;
+			margin: 0 auto;
+			height: auto;
+			width:60%;
+			padding-bottom: 10px;
+		}
+
+		h3 {
+			width:80%;
+			line-height:20px;
+		}
+
+		ul{
+			float:none;
+			width:100%;
+			margin-top:10px;
+		}
+
+		div.buttons {
+			justify-content:center;
+			position:static;
+		}
+	}
+}
+
+@media all and (max-width:450px) {
+	li.movie {
+		h3 {
+			width:70%;
+		}
+	}
+}
+
+@media all and (max-width:350px) {
+	li.movie {
+		img.poster {
+			width:100%;
+		}
 	}
 }
