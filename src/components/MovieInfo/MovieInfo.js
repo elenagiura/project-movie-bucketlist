@@ -1,6 +1,5 @@
 import React from 'react';
 import './MovieInfo.scss';
-import { firebaseUrl } from './databases';
 import { Link } from 'react-router-dom';
 
 export const MovieInfo = (props) => {
