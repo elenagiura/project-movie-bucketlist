@@ -1,6 +1,6 @@
 //API datas
 const key = '93d50c42';
-export const apiUrl = `http://www.omdbapi.com/?apikey=${key}&`;
+export const apiUrl = `https://www.omdbapi.com/?apikey=${key}&`;
 
 //Firebase
 export const firebaseConfig = {
